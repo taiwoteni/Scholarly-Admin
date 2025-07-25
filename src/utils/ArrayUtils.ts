@@ -1,4 +1,4 @@
-export const distinctList = (list: any[], property:string, compareFn?:(a: any, b: any) => number): any[]=>{
+export const distinctList = <T>(list: T[], property: keyof T, compareFn?:(a: T, b: T) => number): T[]=>{
 
     const newDistinct: any[] = [];
 

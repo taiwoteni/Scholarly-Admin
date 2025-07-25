@@ -1,11 +1,6 @@
 
 import React, { createContext, useCallback, useContext, useEffect, useState } from "react"
 import { useStompClient } from "./StompClientContext";
-import {ApiResponse} from '../interfaces/ApiResponse';
-import { getChats, saveChats} from "../services/user-storage";
-import { distinctList } from "../utils/ArrayUtils";
-import { Chat } from "../interfaces/Chat";
-import { useParams } from "react-router";
 import { TypingIndicator } from "../interfaces/TypingIndicator";
 import { useAdmin } from "./AdminProvider";
 

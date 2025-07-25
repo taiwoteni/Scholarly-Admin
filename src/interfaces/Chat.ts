@@ -8,7 +8,7 @@ export interface Chat{
     fileName?:string,
     thumbnail?:string,
     attachmentType:'image' | 'video' | 'audio' | 'document',
-    messageType:'chat' | 'update' |'member' | 'create' | 'type'
+    messageType:'chat' | 'update' |'member' | 'create' | 'type' | 'call'
     timestamp:string,
     readReceipt:string[],
 }
